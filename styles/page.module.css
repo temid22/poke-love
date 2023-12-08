@@ -1,0 +1,149 @@
+.pokemonContainer {
+  height: 100vh;
+}
+
+.pokemonWrapper {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.pokemonTitle {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.pokeCard {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background: #eee;
+  font-weight: 300;
+}
+
+.pokeImg > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.pokeTitle {
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+}
+.pokeWeight {
+  font-weight: 500;
+  font-size: 16px;
+}
+.pokeHeight {
+  font-weight: 500;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.favBtn {
+  height: 30px;
+  width: 100%;
+  background: purple;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border: 1px solid purple;
+}
+.favBtn:hover {
+  color: purple;
+  background: #eee;
+}
+
+.container {
+  height: 70px;
+  background: #3f2929;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  color: #eee;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #eee;
+
+  border: 0.5px solid gray;
+  height: 50px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnGet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  height: 40px;
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  background: purple;
+  color: #eee;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btnGet:hover {
+  background: #eee;
+  color: green;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pokemonWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 745px) {
+  .pokemonWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 550px) {
+  .pokemonWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
